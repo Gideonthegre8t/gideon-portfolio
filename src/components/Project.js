@@ -14,7 +14,7 @@ function Project() {
   };
 
   const handleProjectPortfolio = () => {
-    window.open("https://Gideonthegre8t.github.io/GideonJohnsonPortfolio", "_blank");
+    window.open("https://gideon-portfolio-theta.vercel.app/", "_blank");
   };
 
   // Handle OnClick for Github
@@ -27,7 +27,7 @@ function Project() {
   };
 
   const handlePortfolioGithub = () => {
-    window.open("https://github.com/Gideonthegre8t/GideonJohnsonPortfolio", "_blank");
+    window.open("https://github.com/Gideonthegre8t/gideon-portfolio", "_blank");
   };
 
   return (
