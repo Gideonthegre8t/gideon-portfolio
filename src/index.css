@@ -13,6 +13,16 @@ body {
   font-family: poppins;
 }
 
+.back-to-top {
+  position: fixed;
+  bottom: 100px;
+  right: 50px;
+  height: 0px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 h1 {
   margin: 10px;
   font-size: 24px;
@@ -154,26 +164,10 @@ span {
     margin-bottom: 0px;
   }
 
- .profile {
-  position: relative;
-  bottom: 37em;
-  left: 15em;
-  border-radius: 50%;
-  padding: 2px;
-  background: linear-gradient(
-    270deg,
-    #13adc7 0%,
-    #6978d1 66.67%,
-    #945dd6 100%
-  );
-  box-shadow: 0px 3.02px 12.94px 0px #13adc74d;
-    z-index: 1;
-  }
-
   .ellipse2 {
     position: relative;
-    bottom: 35em;
-    left: 10em;
+    bottom: 37em;
+    left: 19em;
   }
 
   .cv-button {
@@ -202,7 +196,7 @@ span {
   }
 
   .project-container {
-    margin-top: -12em;
+    margin-top: -8em;
   }
 
   .project-container,
@@ -379,9 +373,10 @@ span {
   }
 
   .about-card {
-    display: flex;
-    flex-direction: row-reverse;
-    margin: 40px 0px;
+    display: block;
+  }
+
+  .about-text {
     gap: 2em;
   }
 
@@ -423,12 +418,19 @@ span {
     margin: 0px;
   }
 
+  .back-to-top {
+    position: fixed;
+    bottom: 50px;
+    right: 5px;
+    height: 30%;
+    width: 30%;
+  }
+
   h1 {
     color: white;
   }
 
   h2 {
-    font-family: "poppins";
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
@@ -436,7 +438,6 @@ span {
   }
 
   h3 {
-    font-family: "poppins";
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
@@ -451,7 +452,6 @@ span {
   }
 
   .header-content > h2 {
-    font-family: "poppins";
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
@@ -479,12 +479,6 @@ span {
     display: block;
   }
 
-  .profile {
-    position: relative;
-    bottom: 24em;
-    left: 2em;
-  }
-
   .full-ellipse {
     display: none;
   }
@@ -495,7 +489,7 @@ span {
   .ellipse2 {
     position: absolute;
     top: 420px;
-    left: 150px;
+    left: 100px;
   }
 
   .cv-button {
@@ -522,7 +516,7 @@ span {
   }
 
   .project-container {
-    margin-top: -12em;
+    margin-top: 4em;
   }
 
   .project-container,
@@ -561,7 +555,6 @@ span {
   }
 
   .project-text > h3 {
-    font-family: "poppins";
     font-size: 14px;
     font-weight: 500;
     line-height: 21px;
@@ -619,7 +612,6 @@ span {
   }
 
   h4 {
-    font-family: "poppins";
     font-size: 12px;
     font-weight: 500;
     line-height: 18px;
@@ -661,8 +653,11 @@ span {
     margin: 4em 15px;
   }
 
-  .skills,
   .about-text {
+    display: block;
+  }
+
+  .skills {
     margin-top: 1em;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -705,7 +700,7 @@ span {
   }
 
   .about-text > p {
-    margin-top: 0em;
+    margin-top: 2em;
   }
 
   .about-text > h3 {
@@ -771,7 +766,7 @@ span {
     font-weight: 400;
     line-height: 39px;
     text-align: left;
-    width: 55%;
+    width: 75%;
   }
 
   .header-content > p {
@@ -781,21 +776,14 @@ span {
     width: 65%;
   }
 
-  .profile {
-    position: relative;
-    bottom: 35em;
-    left: 15em;
-  }
-
-
   .ellipse2 {
     position: relative;
-    bottom: 45em;
-    left: 23em;
+    bottom: 35em;
+    left: 20em;
   }
 
   .project-container {
-    margin-top: -25em;
+    margin-top: -12em;
   }
 
   h2 {
@@ -851,12 +839,12 @@ span {
   }
 
   .about-card {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: block;
+    gap: 2em;
   }
 
   .about-text > p {
-    margin-top: 0em;
+    margin-top: 2em;
   }
 
   .about-text > h3 {
@@ -879,13 +867,6 @@ span {
 }
 
 @media only screen and (max-width: 321px) {
-  .photo {
-    position: absolute;
-    top: 430px;
-    left: 49.94px;
-    right: 0px;
-  }
-
   .cv-button {
     position: absolute;
     top: 620px;

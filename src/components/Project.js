@@ -6,11 +6,17 @@ import Portfolio from "../assets/images/Portfolio.png";
 function Project() {
   // Handle OnClick for project
   const handleProjectInvestment = () => {
-    window.open("https://gideonthegre8t.github.io/portfolio-website-2/", "_blank");
+    window.open(
+      "https://gideonthegre8t.github.io/portfolio-website-2/",
+      "_blank"
+    );
   };
 
   const handleProjectFinancial = () => {
-    window.open("https://gideonthegre8t.github.io/portfolio-website-1/", "_blank");
+    window.open(
+      "https://gideonthegre8t.github.io/portfolio-website-1/",
+      "_blank"
+    );
   };
 
   const handleProjectPortfolio = () => {
@@ -19,11 +25,17 @@ function Project() {
 
   // Handle OnClick for Github
   const handleInvesmentGithub = () => {
-    window.open("https://github.com/Gideonthegre8t/portfolio-website-2", "_blank");
+    window.open(
+      "https://github.com/Gideonthegre8t/portfolio-website-2",
+      "_blank"
+    );
   };
 
   const handleFinancialGithub = () => {
-    window.open("https://github.com/Gideonthegre8t/portfolio-website-1", "_blank");
+    window.open(
+      "https://github.com/Gideonthegre8t/portfolio-website-1",
+      "_blank"
+    );
   };
 
   const handlePortfolioGithub = () => {
@@ -46,7 +58,10 @@ function Project() {
               </div>
             </div>
             <div className="project-links">
-              <button onClick={handleProjectInvestment} className="preview-button">
+              <button
+                onClick={handleProjectInvestment}
+                className="preview-button"
+              >
                 Live Preview
               </button>
               <button onClick={handleInvesmentGithub} className="git-button">
@@ -63,7 +78,10 @@ function Project() {
               </div>
             </div>
             <div className="project-links">
-              <button onClick={handleProjectFinancial} className="preview-button">
+              <button
+                onClick={handleProjectFinancial}
+                className="preview-button"
+              >
                 Live Preview
               </button>
               <button onClick={handleFinancialGithub} className="git-button">
@@ -74,14 +92,21 @@ function Project() {
           <div className="project-container2">
             <div className="card">
               <div className="project-top">
-                <img className="financial" src={Portfolio} alt="portfolio-pic" />
+                <img
+                  className="financial"
+                  src={Portfolio}
+                  alt="portfolio-pic"
+                />
                 <div className="project-text">
                   <h3 className="project-title">Portfolio Website</h3>
                   <p>Responsive and functional React website</p>
                 </div>
               </div>
               <div className="project-links">
-                <button onClick={handleProjectPortfolio} className="preview-button">
+                <button
+                  onClick={handleProjectPortfolio}
+                  className="preview-button"
+                >
                   Live Preview
                 </button>
                 <button onClick={handlePortfolioGithub} className="git-button">

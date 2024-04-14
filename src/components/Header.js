@@ -3,7 +3,8 @@ import Navbar from "./Navbar";
 import ellipse1 from "../assets/images/Ellipse 1.png";
 import ellipse2 from "../assets/images/Ellipse 2.png";
 import ellipse from "../assets/images/full-ellipse.png";
-import profilePhoto from "../assets/images/GIDEON.png";
+
+import BackToTopText from "./BackToTopText";
 
 function Header() {
   //   //Handle CV download
@@ -26,11 +27,12 @@ function Header() {
       <div className="header-content-flex">
         <div className="header-content">
           <h2>
-            <span>Hello, I'm Gideon,</span> frontend developer
+            <span>Hello, I'm Gideon,</span> Frontend developer
           </h2>
           <p>
-            UI/3D Animator seeking to apply competent development skills with
-            focus and collaboration , communitcation and passion
+            I specialize in creating dynamic web experiences. Each project
+            demonstrates my abiity to design responsive and visually appealing
+            interfaces.
           </p>
           <button onClick={handleDownloadCV} className="cv-button">
             Download CV
@@ -39,10 +41,10 @@ function Header() {
         <div className="header-bottom shrink">
           <img className="ellipse1" src={ellipse1} alt="ellipse-semi-circle" />
           <img className="full-ellipse" src={ellipse} alt="ellipse1" />
-          <img className="profile" src={profilePhoto} alt="profile-pic" />
           <img className="ellipse2" src={ellipse2} alt="ellipse2" />
         </div>
       </div>
+      <BackToTopText />
     </header>
   );
 }

@@ -3,7 +3,8 @@ import React from "react";
 function Technology() {
   return (
     <section>
-      <div id="technology"
+      <div
+        id="technology"
         className="
     tech-container"
       >
@@ -39,7 +40,6 @@ function Technology() {
           </div>
         </div>
 
-
         <div className="tech-card">
           <div className="skill-level">
             <h4>JavaScript</h4>
@@ -67,7 +67,6 @@ function Technology() {
             </div>
           </div>
         </div>
-
       </div>
     </section>
   );

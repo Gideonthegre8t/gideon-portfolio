@@ -6,6 +6,7 @@ import Skill from "./components/Skill";
 import About from "./components/About";
 import Footer from "./components/Footer";
 
+
 function App() {
   return (
     <div className="App">
@@ -15,6 +16,7 @@ function App() {
       <Skill />
       <About />
       <Footer />
+   
     </div>
   );
 }

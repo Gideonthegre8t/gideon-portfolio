@@ -1,12 +1,10 @@
 import React from "react";
 
 function Navbar() {
-
   const handleClick = (event, id) => {
     event.preventDefault(); // Prevent default anchor behavior
     const element = document.getElementById(id);
     element.scrollIntoView({ behavior: "smooth" });
-
   };
 
   return (
@@ -19,10 +17,9 @@ function Navbar() {
           Technologies
         </a>
         <a href="/#" onClick={(e) => handleClick(e, "about")}>
-          About 
+          About
         </a>
       </nav>
-     
     </div>
   );
 }
