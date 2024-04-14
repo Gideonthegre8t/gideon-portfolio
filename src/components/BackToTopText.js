@@ -7,7 +7,7 @@ function BackToTopText() {
 
   useEffect(() => {
     const handleScroll = () => {
-      if (window.scrollY > 100) {
+      if (window.scrollY > 200) {
         setShowBackToTop(true);
       } else {
         setShowBackToTop(false);
@@ -32,7 +32,7 @@ function BackToTopText() {
     <div>
       {showBackToTop && (
         <button className="back-to-top" onClick={scrollUp}>
-          <img src= {topArrow} alt="arrow-top"/>
+          <img className="top-arrow" src= {topArrow} alt="arrow-top"/>
         </button>
       )}
     </div>
