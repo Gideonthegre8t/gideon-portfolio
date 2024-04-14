@@ -162,13 +162,14 @@ margin-bottom: 0px;
 
 
 .header-bottom{
+  position: relative;
   margin-top: 4em;
   margin-bottom: 0px;
 }
 
 
 .photo {
-  position: relative;
+  position: absolute;
   width: 207.25px;
   height: 207.25px;
   left: 15em;
@@ -184,8 +185,8 @@ margin-bottom: 0px;
 
 .ellipse2 {
   position: relative;
-  bottom: 35em;
-  left: 10em;
+  bottom: 32em;
+  left:22em;
 }
 
 
