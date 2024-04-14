@@ -47,7 +47,7 @@ function Header() {
           <img className="ellipse2" src={ellipse2} alt="ellipse2" />
         </div> */}
 
-         <img className="photo" src={ellipse2} alt="profile-pic" />
+         <img  src={ellipse2} alt="profile-pic" />
       </div>
     </header>
   );
