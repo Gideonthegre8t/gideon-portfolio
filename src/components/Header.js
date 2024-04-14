@@ -1,9 +1,9 @@
 import React from "react";
 import Navbar from "./Navbar";
 // import ellipse1 from "../assets/images/Ellipse 1.png";
-// import ellipse2 from "../assets/images/Ellipse 2.png";
+import ellipse2 from "../assets/images/Ellipse 2.png";
 // import ellipse from "../assets/images/full-ellipse.png";
-import profilePhoto from "../assets/images/GIDEON.png";
+// import profilePhoto from "../assets/images/GIDEON.png";
 
 function Header() {
   //   //Handle CV download
@@ -47,7 +47,7 @@ function Header() {
           <img className="ellipse2" src={ellipse2} alt="ellipse2" />
         </div> */}
 
-         <img className="photo" src={profilePhoto} alt="profile-pic" />
+         <img className="photo" src={ellipse2} alt="profile-pic" />
       </div>
     </header>
   );
