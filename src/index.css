@@ -154,7 +154,7 @@ span {
     margin-bottom: 0px;
   }
 
- .profile {
+ /* .profile {
     position: relative;
     width: 207.25px;
     height: 207.25px;
@@ -172,7 +172,7 @@ span {
     );
     box-shadow: 0px 3.02px 12.94px 0px #13adc74d;
     z-index: 1;
-  }
+  } */
 
   .ellipse2 {
     position: relative;
@@ -483,7 +483,7 @@ span {
     display: block;
   }
 
-  .profile {
+  /* .profile {
     position: absolute;
     width: 207.25px;
     height: 207.25px;
@@ -502,7 +502,7 @@ span {
     );
     box-shadow: 0px 3.02px 12.94px 0px #13adc74d;
     z-index: 1;
-  }
+  } */
 
   .full-ellipse {
     display: none;
