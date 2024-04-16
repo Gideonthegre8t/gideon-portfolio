@@ -4,8 +4,6 @@ import ellipse1 from "../assets/images/Ellipse 1.png";
 import ellipse2 from "../assets/images/Ellipse 2.png";
 import ellipse from "../assets/images/full-ellipse.png";
 
-import BackToTopText from "./BackToTopText";
-
 function Header() {
   //   //Handle CV download
 
@@ -19,7 +17,7 @@ function Header() {
   return (
     <header>
       <div className="header-top">
-        <h1> G.J. portfilio</h1>
+        <div><h1 className="init-logo"> G.J. portfilio</h1></div>
         <div>
           <Navbar />
         </div>
@@ -44,7 +42,6 @@ function Header() {
           <img className="ellipse2" src={ellipse2} alt="ellipse2" />
         </div>
       </div>
-      <BackToTopText />
     </header>
   );
 }
