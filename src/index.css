@@ -471,15 +471,19 @@ span {
     color: #929eb0;
   }
 
+
   .header-content > h2 {
     font-size: 24px;
     font-weight: 600;
     line-height: 28px;
-    text-align: left;
+    margin: 0 auto;
+    width: 80%;
   }
 
   .header-content > p {
+    margin: 0 auto;
     width: 80%;
+    margin-top: 1em;
   }
   .header-top {
     display: flex;
@@ -497,18 +501,13 @@ span {
     margin-top: 1em;
   }
 
-  .header-content {
-    margin: 1em 2em;
-    margin-top: -3em;
-  }
 
   .header-content-flex {
     display: block;
   }
 
   .cv-button {
-    top: 390px;
-    left: 60px;
+   margin: 2em 3em;
   }
 
   .back-to-top{
@@ -897,10 +896,7 @@ span {
   }
 }
 @media only screen and (min-width: 322px) and (max-width: 501px) {
-  .header-content {
-    margin: 1em 2em;
-    margin-top: -1.5em;
-  }
+
   .init-logo {
     font-size: 16px;
   }
@@ -912,14 +908,6 @@ span {
   .navigator {
     margin-top: -0.5em;
     left: 1em;
-  }
-
-  .header-content > h2 {
-    width: 90%;
-  }
-
-  .header-content > p {
-    width: 70%;
   }
 
   .project-container {
@@ -939,10 +927,6 @@ span {
   .navigator {
     margin-top: 5em;
     left: 0;
-  }
-
-  .header-content {
-    margin-top: 2em;
   }
 
   .cv-button {
