@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import topArrow  from "../assets/images/back-to-top.png"
+import topArrow from "../assets/images/back-to-top.png";
 
 function BackToTopText() {
   //handle BacKToTopText State
@@ -32,7 +32,12 @@ function BackToTopText() {
     <div>
       {showBackToTop && (
         <button className="back-to-top">
-          <img onClick={scrollUp} className="top-arrow" src= {topArrow} alt="arrow-top"/>
+          <img
+            onClick={scrollUp}
+            className="top-arrow"
+            src={topArrow}
+            alt="arrow-top"
+          />
         </button>
       )}
     </div>
