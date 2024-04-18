@@ -1,8 +1,10 @@
 import React from "react";
 import Navbar from "./Navbar";
-import ellipse1 from "../assets/images/Ellipse 1.png";
-import ellipse2 from "../assets/images/Ellipse 2.png";
-import ellipse from "../assets/images/full-ellipse.png";
+// import ellipse1 from "../assets/images/Ellipse 1.png";
+// import ellipse2 from "../assets/images/Ellipse 2.png";
+// import ellipse from "../assets/images/full-ellipse.png";
+import EllipseAnim from "./EllipseAnimation";
+import BackToTopText from "./BackToTopText";
 
 function Header() {
   //   //Handle CV download
@@ -36,12 +38,14 @@ function Header() {
             Download CV
           </button>
         </div>
-        <div className="header-bottom shrink">
-          <img className="ellipse1" src={ellipse1} alt="ellipse-semi-circle" />
+        <div className="header-bottom shrink rive-anim">
+          <EllipseAnim />
+          {/* <img className="ellipse1" src={ellipse1} alt="ellipse-semi-circle" />
           <img className="full-ellipse" src={ellipse} alt="ellipse1" />
-          <img className="ellipse2" src={ellipse2} alt="ellipse2" />
+          <img className="ellipse2" src={ellipse2} alt="ellipse2" /> */}
         </div>
       </div>
+      <BackToTopText />
     </header>
   );
 }

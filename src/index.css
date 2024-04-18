@@ -12,6 +12,24 @@ body {
   color: #fff;
   font-family: poppins;
 }
+.back-to-top {
+  position: fixed;
+  background: none;
+  outline: none;
+  border: none;
+  bottom: 1px;
+  left: 80%;
+}
+
+.anim-lg {
+  width: 632px;
+  height: 632px;
+}
+
+.anim-sm {
+  width: 432px;
+  height: 432px;
+}
 
 h1 {
   margin: 10px;
@@ -65,10 +83,10 @@ span {
 }
 
 @media only screen and (min-width: 1839px) and (max-width: 4000px) {
-  .header-bottom {
-    display: none;
+  .rive-anim {
+    position: absolute;
+    margin: 0em 40em;
   }
-
   #project {
     margin-top: 8em;
   }
@@ -77,6 +95,14 @@ span {
 @media only screen and (max-width: 4000px) {
   body {
     margin: 0px 80px;
+  }
+
+  .rive-anim {
+    position: absolute;
+  }
+
+  .anim-sm {
+    display: none;
   }
 
   h2 {
@@ -91,6 +117,20 @@ span {
     font-weight: 600;
     line-height: 96px;
     text-align: left;
+    width: 60%;
+  }
+
+  .header-content > p {
+    margin-top: 1.5em;
+    margin-bottom: 0px;
+    text-align: left;
+    width: 40%;
+  }
+
+  .anim-lg {
+    position: absolute;
+    margin: 0em 27em;
+    top: -6em;
   }
 
   h3 {
@@ -98,6 +138,7 @@ span {
     font-weight: 600;
     line-height: 30px;
     text-align: left;
+    width: 80%;
   }
   h4 {
     font-size: 18px;
@@ -134,32 +175,15 @@ span {
     margin-bottom: 0px;
   }
 
-  .header-content > p {
-    margin-top: 1.5em;
-    margin-bottom: 0px;
-    text-align: left;
-    width: 70%;
-  }
-
   .header-content-flex {
     display: flex;
     gap: 0px;
     margin-top: 4em;
   }
 
-  .ellipse1 {
-    display: none;
-  }
-
   .header-bottom {
     margin-top: 3em;
     margin-bottom: 0px;
-  }
-
-  .ellipse2 {
-    position: relative;
-    bottom: 37em;
-    left: 19em;
   }
 
   .cv-button {
@@ -178,6 +202,7 @@ span {
     box-shadow: 0px 3.02px 12.94px 0px #13adc74d;
     cursor: pointer;
     transition: transform 0.3s;
+    z-index: 1;
   }
 
   .cv-button:hover,
@@ -188,7 +213,7 @@ span {
   }
 
   .project-container {
-    margin-top: -8em;
+    margin-top: 10em;
   }
 
   .project-container,
@@ -410,6 +435,17 @@ span {
     margin: 0px;
   }
 
+  .anim-lg {
+    display: none;
+  }
+
+  .anim-sm {
+    display: block;
+    position: absolute;
+    top: -8em;
+    margin-left: -5.5em;
+  }
+
   h1 {
     color: white;
   }
@@ -470,35 +506,13 @@ span {
     display: block;
   }
 
-  .full-ellipse {
-    display: none;
-  }
-  .ellipse1 {
-    display: block;
-  }
-
-  .ellipse2 {
-    position: absolute;
-    top: 300px;
-    left: 100px;
-  }
-
   .cv-button {
-    position: absolute;
-    top: 500px;
+    top: 390px;
     left: 60px;
-    width: 156px;
-    height: 55px;
-    color: #fff;
-    padding: 17px 30px 17px 30px;
-    border-radius: 43.6px;
-    background: linear-gradient(
-      270deg,
-      #13adc7 0%,
-      #6978d1 66.67%,
-      #945dd6 100%
-    );
-    box-shadow: 0px 3.02px 12.94px 0px #13adc74d;
+  }
+
+  .back-to-top{
+    left: 70%;
   }
 
   .project-top > img {
@@ -507,7 +521,7 @@ span {
   }
 
   .project-container {
-    margin-top: 4em;
+    margin-top: 22em;
   }
 
   .project-container,
@@ -740,20 +754,45 @@ span {
   }
 }
 
-@media only screen and (min-width: 601px) and (max-width: 1240px) {
+@media only screen and (min-width: 684px) and (max-width: 1028px) {
+  .anim-lg {
+    margin-left: 50em;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1320px) {
+  .anim-lg {
+    margin-left: 55em;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 680px) {
+  .anim-lg {
+    left: 8em;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1320px) {
   body {
     margin: 10px;
   }
-  .navigator {
-    right: 1em;
+
+  .header-content > h2 {
+    width: 75%;
   }
 
-  .shrink {
-    height: 10%;
-    width: 10%;
-    position: relative;
-    right: 30em;
-    bottom: 60px;
+  .rive-anim {
+    position: absolute;
+    margin: 1em 0em;
+    left: -26em;
+  }
+  .anim-lg {
+    width: 332px;
+    height: 332px;
+  }
+
+  .navigator {
+    right: 1em;
   }
 
   .header-content {
@@ -774,14 +813,8 @@ span {
     width: 65%;
   }
 
-  .ellipse2 {
-    position: relative;
-    bottom: 35em;
-    left: 20em;
-  }
-
   .project-container {
-    margin-top: -12em;
+    margin-top: 5em;
   }
 
   h2 {
@@ -858,6 +891,11 @@ span {
   }
 }
 
+@media only screen and (min-width: 1241px) and (max-width: 1492px) {
+  .rive-anim {
+    margin: 0em 7em;
+  }
+}
 @media only screen and (min-width: 322px) and (max-width: 501px) {
   .header-content {
     margin: 1em 2em;
@@ -877,11 +915,15 @@ span {
   }
 
   .header-content > h2 {
-    width: 80%;
+    width: 90%;
   }
 
   .header-content > p {
-    width: 90%;
+    width: 70%;
+  }
+
+  .project-container {
+    margin-top: 24em;
   }
 }
 
@@ -899,7 +941,7 @@ span {
     left: 0;
   }
 
-  .header-content{
+  .header-content {
     margin-top: 2em;
   }
 

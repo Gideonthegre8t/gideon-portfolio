@@ -73,7 +73,7 @@ function Project() {
             <div className="project-top">
               <img className="financial" src={Financial} alt="financial-pic" />
               <div className="project-text">
-                <h3 className="project-title">Financial Advisers Website</h3>
+                <h3 className="project-title">Financial Website</h3>
                 <p>Responsive and functional React website</p>
               </div>
             </div>
