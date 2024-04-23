@@ -16,7 +16,6 @@ function App() {
       <Skill />
       <About />
       <Footer />
-   
     </div>
   );
 }

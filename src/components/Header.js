@@ -4,7 +4,7 @@ import EllipseAnim from "./EllipseAnimation";
 import BackToTopText from "./BackToTopText";
 
 function Header() {
-  //   //Handle CV download
+//Handle CV download
 
   const handleDownloadCV = () => {
     window.open(
@@ -14,7 +14,7 @@ function Header() {
   };
 
   return (
-    <header>
+    <header className="header animation-layer parallax" id="header-anim">
       <div className="header-top">
         <div>
           <h1 className="init-logo"> G.J. portfolio</h1>
@@ -23,9 +23,9 @@ function Header() {
           <Navbar />
         </div>
       </div>
-      <div className="header-content-flex">
+      <div className="header-content-flex ">
         <div className="header-content">
-          <h2>
+          <h2 className="title">
             <span>Hello, I'm Gideon,</span> Frontend developer
           </h2>
           <p>

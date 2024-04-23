@@ -12,6 +12,8 @@ body {
   color: #fff;
   font-family: poppins;
 }
+
+
 .back-to-top {
   position: fixed;
   background: none;
@@ -19,6 +21,7 @@ body {
   border: none;
   bottom: 1px;
   left: 80%;
+  z-index: 1;
 }
 
 .anim-lg {
@@ -41,6 +44,13 @@ h1 {
 
 .navigator {
   position: relative;
+  border-radius: 20px;
+    background: linear-gradient(
+      270deg,  
+      #13adc7 0%,
+      #6978d1 66.67%,
+      #945dd6 100%
+    );
 }
 
 nav a {
@@ -48,7 +58,7 @@ nav a {
   margin: 1rem;
   color: #fff;
   text-decoration: none;
-  font-family: Poppins;
+  font-family: "poppins";
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
@@ -62,7 +72,12 @@ nav a {
   left: 0;
   width: 0;
   height: 2px;
-  background-color: #07969e;
+  background: linear-gradient(
+      270deg,  
+      #13adc7 0%,
+      #6978d1 66.67%,
+      #945dd6 100%
+    );
 }
 .navbar a:hover::before {
   width: 100%;
@@ -70,7 +85,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #13adc7;
+  color: #0f1624;
 }
 
 span {
@@ -165,8 +180,8 @@ span {
 
   .navigator {
     position: fixed;
-    margin: 10px;
-    right: 10em;
+    margin:20px 0px;
+    right: 6em;
     z-index: 1;
   }
 
@@ -208,8 +223,13 @@ span {
   .cv-button:hover,
   .preview-button:hover,
   .git-button:hover {
+    
     transform: translateY(-5px);
     background: black;
+  }
+
+  .card:hover{
+ transform: translateY(-5px);
   }
 
   .project-container {
@@ -471,7 +491,6 @@ span {
     color: #929eb0;
   }
 
-
   .header-content > h2 {
     font-size: 24px;
     font-weight: 600;
@@ -498,19 +517,19 @@ span {
     position: fixed;
     right: 1em;
     z-index: 1;
-    margin-top: 1em;
+    margin: 15px 0px;
+    border-radius: 15px;
   }
-
 
   .header-content-flex {
     display: block;
   }
 
   .cv-button {
-   margin: 2em 3em;
+    margin: 2em 3em;
   }
 
-  .back-to-top{
+  .back-to-top {
     left: 70%;
   }
 
@@ -896,26 +915,25 @@ span {
   }
 }
 @media only screen and (min-width: 322px) and (max-width: 501px) {
-
   .init-logo {
     font-size: 16px;
   }
 
   .header-top {
-    display: block;
+    display: flex;
   }
 
   .navigator {
-    margin-top: -0.5em;
-    left: 1em;
+ margin: 20px 0em; 
   }
+
 
   .project-container {
     margin-top: 24em;
   }
 }
 
-@media only screen and (max-width: 321px) {
+@media only screen and (max-width: 435px) {
   .init-logo {
     font-size: 16px;
   }
@@ -925,29 +943,12 @@ span {
   }
 
   .navigator {
-    margin-top: 5em;
-    left: 0;
-  }
+    margin: 0em 2em;
+     }
+}
 
-  .cv-button {
-    position: absolute;
-    top: 620px;
-    left: 60px;
-    width: 156px;
-    height: 55px;
-    color: #fff;
-    padding: 17px 30px 17px 30px;
-    border-radius: 43.6px;
-    background: linear-gradient(
-      270deg,
-      #13adc7 0%,
-      #6978d1 66.67%,
-      #945dd6 100%
-    );
-    box-shadow: 0px 3.02px 12.94px 0px #13adc74d;
-  }
-
+@media only screen and (max-width: 370px){
   .navigator {
-    margin: 0px 0em;
-  }
+    margin: 0em 1em;
+     }
 }
