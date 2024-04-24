@@ -13,7 +13,6 @@ body {
   font-family: poppins;
 }
 
-
 .back-to-top {
   position: fixed;
   background: none;
@@ -45,12 +44,7 @@ h1 {
 .navigator {
   position: relative;
   border-radius: 20px;
-    background: linear-gradient(
-      270deg,  
-      #13adc7 0%,
-      #6978d1 66.67%,
-      #945dd6 100%
-    );
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
 }
 
 nav a {
@@ -72,12 +66,7 @@ nav a {
   left: 0;
   width: 0;
   height: 2px;
-  background: linear-gradient(
-      270deg,  
-      #13adc7 0%,
-      #6978d1 66.67%,
-      #945dd6 100%
-    );
+  background: linear-gradient(270deg, #13adc7 0%, #6978d1 66.67%, #945dd6 100%);
 }
 .navbar a:hover::before {
   width: 100%;
@@ -180,7 +169,7 @@ span {
 
   .navigator {
     position: fixed;
-    margin:20px 0px;
+    margin: 20px 0px;
     right: 6em;
     z-index: 1;
   }
@@ -223,13 +212,12 @@ span {
   .cv-button:hover,
   .preview-button:hover,
   .git-button:hover {
-    
     transform: translateY(-5px);
     background: black;
   }
 
-  .card:hover{
- transform: translateY(-5px);
+  .card:hover {
+    transform: translateY(-5px);
   }
 
   .project-container {
@@ -680,6 +668,10 @@ span {
     display: block;
   }
 
+  .stack {
+    margin-top: -2em;
+  }
+
   .skills {
     margin-top: 1em;
     display: grid;
@@ -924,9 +916,8 @@ span {
   }
 
   .navigator {
- margin: 20px 0em; 
+    margin: 20px 0em;
   }
-
 
   .project-container {
     margin-top: 24em;
@@ -944,11 +935,11 @@ span {
 
   .navigator {
     margin: 0em 2em;
-     }
+  }
 }
 
-@media only screen and (max-width: 370px){
+@media only screen and (max-width: 370px) {
   .navigator {
     margin: 0em 1em;
-     }
+  }
 }

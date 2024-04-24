@@ -1,18 +1,51 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
 function Technology() {
+  const htmlRef = useRef(null);
+  const cssRef = useRef(null);
+  const javaRef = useRef(null);
+  const reactRef = useRef(null);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let scrollY;
+      if (window.innerWidth < 600) {
+        // Adjust scroll offset for smaller screens
+        scrollY = window.scrollY / 50; // Adjust the division value to control the intensity of the parallax effect on smaller screens
+      } else {
+        scrollY = window.scrollY / 30; // Adjust the division value to control the intensity of the parallax effect on larger screens
+      }
+
+      const htmlOffset = scrollY 
+      const cssOffset = scrollY;
+      const javaOffset = scrollY;
+      const reactOffset = scrollY;
+
+      htmlRef.current.style.transform = `translateY(${htmlOffset}px)`;
+      cssRef.current.style.transform = `translateY(${cssOffset}px)`;
+      javaRef.current.style.transform = `translateY(${javaOffset}px)`;
+      reactRef.current.style.transform = `translateY(${reactOffset}px)`;
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section>
       <div
         id="technology"
-        className="
-    tech-container"
+        className="tech-container"
       >
         <div>
           <h2 className="tech-header">Technologies</h2>
         </div>
 
-        <div className="tech-card">
+        <div className="stack">
+        <div className="tech-card" ref={htmlRef}>
           <div className="skill-level">
             <h4>Html</h4>
             <h4 className="tiny">Expert</h4>
@@ -26,7 +59,7 @@ function Technology() {
           </div>
         </div>
 
-        <div className="tech-card">
+        <div className="tech-card" ref={cssRef}>
           <div className="skill-level">
             <h4>CSS</h4>
             <h4 className="tiny">Expert</h4>
@@ -40,7 +73,7 @@ function Technology() {
           </div>
         </div>
 
-        <div className="tech-card">
+        <div className="tech-card" ref={javaRef}>
           <div className="skill-level">
             <h4>JavaScript</h4>
             <h4 className="tiny">Advanced</h4>
@@ -54,7 +87,7 @@ function Technology() {
           </div>
         </div>
 
-        <div className="tech-card">
+        <div className="tech-card" ref={reactRef}>
           <div className="skill-level">
             <h4>React</h4>
             <h4 className="tiny">Intermediate</h4>
@@ -66,6 +99,7 @@ function Technology() {
               <div className="react-inside inside"></div>
             </div>
           </div>
+        </div>
         </div>
       </div>
     </section>
