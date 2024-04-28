@@ -86,10 +86,10 @@ span {
   text-align: center;
 }
 
-@media only screen and (min-width: 1839px) and (max-width: 4000px) {
+@media only screen and (min-width: 1493px) and (max-width: 4000px) {
   .rive-anim {
     position: absolute;
-    margin: 0em 40em;
+    margin-left: 12em;
   }
   #project {
     margin-top: 8em;
@@ -103,6 +103,7 @@ span {
 
   .rive-anim {
     position: absolute;
+    z-index: -1;
   }
 
   .anim-sm {
@@ -764,21 +765,10 @@ span {
   }
 }
 
-@media only screen and (min-width: 684px) and (max-width: 1028px) {
+@media only screen and (min-width: 820px) and (max-width: 1240px) {
   .anim-lg {
-    margin-left: 50em;
-  }
-}
-
-@media only screen and (min-width: 800px) and (max-width: 1320px) {
-  .anim-lg {
-    margin-left: 55em;
-  }
-}
-
-@media only screen and (min-width: 601px) and (max-width: 680px) {
-  .anim-lg {
-    left: 8em;
+    margin-top: -1em;
+    margin-left: 45em;
   }
 }
 
@@ -793,12 +783,12 @@ span {
 
   .rive-anim {
     position: absolute;
-    margin: 1em 0em;
-    left: -26em;
+    margin: -1em 0em;
+    margin-left: -23em;
   }
   .anim-lg {
-    width: 332px;
-    height: 332px;
+    width: 532px;
+    height: 532px;
   }
 
   .navigator {
@@ -904,6 +894,7 @@ span {
 @media only screen and (min-width: 1241px) and (max-width: 1492px) {
   .rive-anim {
     margin: 0em 7em;
+    margin-top: -4em;
   }
 }
 @media only screen and (min-width: 322px) and (max-width: 501px) {
