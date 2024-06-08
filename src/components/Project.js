@@ -1,46 +1,45 @@
 import React from "react";
-import Investment from "../assets/images/Investment.png";
-import Financial from "../assets/images/Financial.png";
-import Portfolio from "../assets/images/Portfolio.png";
+import ProjectCard from "./ProjectCard";
+import investment from "../assets/images/Investment.png";
+import financial from "../assets/images/Financial.png";
+import portfolio from "../assets/images/Portfolio.png";
+import flowerDrink from "../assets/images/flower-drink.png";
 
 function Project() {
-  // Handle OnClick for project
-  const handleProjectInvestment = () => {
-    window.open(
-      "https://gideonthegre8t.github.io/portfolio-website-2/",
-      "_blank"
-    );
-  };
-
-  const handleProjectFinancial = () => {
-    window.open(
-      "https://gideonthegre8t.github.io/portfolio-website-1/",
-      "_blank"
-    );
-  };
-
-  const handleProjectPortfolio = () => {
-    window.open("https://gideon-portfolio-theta.vercel.app/", "_blank");
-  };
-
-  // Handle OnClick for Github
-  const handleInvesmentGithub = () => {
-    window.open(
-      "https://github.com/Gideonthegre8t/portfolio-website-2",
-      "_blank"
-    );
-  };
-
-  const handleFinancialGithub = () => {
-    window.open(
-      "https://github.com/Gideonthegre8t/portfolio-website-1",
-      "_blank"
-    );
-  };
-
-  const handlePortfolioGithub = () => {
-    window.open("https://github.com/Gideonthegre8t/gideon-portfolio", "_blank");
-  };
+  const projects = [
+    {
+      key:1,
+      title: "Flower Drink App",
+      image: flowerDrink,
+      liveLink: "https://flower-drink.vercel.app/",
+      githubLink: "https://github.com/Gideonthegre8t/flower-drink",
+      description: "Responsive and functional React app",
+    },
+    {
+      key:2,
+      title: "Financial Website",
+      image: financial,
+      liveLink: "https://gideonthegre8t.github.io/portfolio-website-1/",
+      githubLink: "https://github.com/Gideonthegre8t/portfolio-website-1",
+      description: "Responsive and functional React website",
+    },
+    {
+      key:3,
+      title: "Investment Website",
+      image: investment,
+      liveLink: "https://gideonthegre8t.github.io/portfolio-website-2/",
+      githubLink: "https://github.com/Gideonthegre8t/portfolio-website-2",
+      description: "Responsive and functional React website",
+    },
+    {
+      key:4,
+      title: "Portfolio Website",
+      image: portfolio,
+      liveLink: "https://gideon-portfolio-theta.vercel.app/",
+      githubLink: "https://github.com/Gideonthegre8t/gideon-portfolio",
+      description: "Responsive and functional React website",
+    },
+  ];
 
   return (
     <section>
@@ -49,72 +48,9 @@ function Project() {
           <h2 className="project-header">Projects</h2>
         </div>
         <div className="card-container">
-          <div className="card">
-            <div className="project-top">
-              <img className="financial" src={Investment} alt="financial-pic" />
-              <div className="project-text">
-                <h3 className="project-title">Investment Website</h3>
-                <p>Responsive and functional React website</p>
-              </div>
-            </div>
-            <div className="project-links">
-              <button
-                onClick={handleProjectInvestment}
-                className="preview-button"
-              >
-                Live Preview
-              </button>
-              <button onClick={handleInvesmentGithub} className="git-button">
-                GitHub
-              </button>
-            </div>
-          </div>
-          <div className="card">
-            <div className="project-top">
-              <img className="financial" src={Financial} alt="financial-pic" />
-              <div className="project-text">
-                <h3 className="project-title">Financial Website</h3>
-                <p>Responsive and functional React website</p>
-              </div>
-            </div>
-            <div className="project-links">
-              <button
-                onClick={handleProjectFinancial}
-                className="preview-button"
-              >
-                Live Preview
-              </button>
-              <button onClick={handleFinancialGithub} className="git-button">
-                GitHub
-              </button>
-            </div>
-          </div>
-          <div className="project-container2">
-            <div className="card">
-              <div className="project-top">
-                <img
-                  className="financial"
-                  src={Portfolio}
-                  alt="portfolio-pic"
-                />
-                <div className="project-text">
-                  <h3 className="project-title">Portfolio Website</h3>
-                  <p>Responsive and functional React website</p>
-                </div>
-              </div>
-              <div className="project-links">
-                <button
-                  onClick={handleProjectPortfolio}
-                  className="preview-button"
-                >
-                  Live Preview
-                </button>
-                <button onClick={handlePortfolioGithub} className="git-button">
-                  GitHub
-                </button>
-              </div>
-            </div>
-          </div>
+          {projects.map((project, index) => (
+            <ProjectCard key={index} project={project} />
+          ))}
         </div>
       </div>
     </section>
