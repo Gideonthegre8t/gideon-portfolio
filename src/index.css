@@ -10,7 +10,7 @@
 body {
   background: #0f1624;
   color: #fff;
-  font-family: poppins;
+  font-family: 'poppins';
 }
 
 .back-to-top {
@@ -52,7 +52,7 @@ nav a {
   margin: 1rem;
   color: #fff;
   text-decoration: none;
-  font-family: "poppins";
+  font-family: 'poppins';
   font-size: 14px;
   font-weight: 500;
   line-height: 21px;
@@ -291,7 +291,7 @@ span {
   }
 
   .preview-button {
-    font-family: "poppins";
+    font-family: 'poppins';
     width: 150px;
     height: 55px;
     color: #fff;
@@ -309,7 +309,7 @@ span {
   }
 
   .git-button {
-    font-family: "poppins";
+    font-family: 'poppins';
     width: 150px;
     height: 55px;
     padding: 17px 30px 17px 30px;
@@ -585,7 +585,7 @@ span {
   }
 
   .preview-button {
-    font-family: "poppins";
+    font-family: 'poppins';
     width: 156px;
     height: 55px;
     color: #fff;
@@ -601,7 +601,7 @@ span {
   }
 
   .git-button {
-    font-family: "poppins";
+    font-family: 'poppins';
     width: 109px;
     height: 55px;
     padding: 17px 30px 17px 30px;
@@ -846,7 +846,7 @@ span {
   }
 
   .git-button {
-    font-family: "poppins";
+    font-family: 'poppins';
     width: 40%;
     padding: 0;
   }
