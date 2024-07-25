@@ -4,6 +4,7 @@ import investment from "../assets/images/Investment.png";
 import financial from "../assets/images/Financial.png";
 import portfolio from "../assets/images/Portfolio.png";
 import flowerDrink from "../assets/images/flower-drink.png";
+import lms from "../assets/images/learning-management.png";
 
 function Project() {
   const projects = [
@@ -38,6 +39,14 @@ function Project() {
       liveLink: "https://gideon-portfolio-theta.vercel.app/",
       githubLink: "https://github.com/Gideonthegre8t/gideon-portfolio",
       description: "Responsive and functional React website",
+    },
+    {
+      key:5,
+      title: "Learning Management System",
+      image: lms,
+      liveLink: "https://baselink-academy.vercel.app/",
+      githubLink: "https://github.com/Gideonthegre8t/baselink-academy",
+      description: "Responsive and functional Learning Management System",
     },
   ];
 
