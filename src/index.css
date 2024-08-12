@@ -329,6 +329,10 @@ span {
     margin-top: 6em;
   }
 
+  .skill-container{
+    margin-top: 12em;
+  }
+
   .skill-level {
     display: flex;
     margin: 15px;

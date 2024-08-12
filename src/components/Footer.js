@@ -8,7 +8,7 @@ function Footer() {
   // Handle Onclick
   const handleLinkdin = () => {
     window.open(
-      "https://www.linkedin.com/in/gideon-johnson-b09ba1219?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      "https://www.linkedin.com/in/gideon-johnson-b09ba1219?",
       "_blank"
     );
   };
