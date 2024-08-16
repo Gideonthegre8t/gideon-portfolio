@@ -5,11 +5,20 @@ import financial from "../assets/images/Financial.png";
 import portfolio from "../assets/images/Portfolio.png";
 import flowerDrink from "../assets/images/flower-drink.png";
 import lms from "../assets/images/learning-management.png";
+import catering from "../assets/images/catering.png";
 
 function Project() {
   const projects = [
     {
       key:1,
+      title: "Catering Website",
+      image: catering,
+      liveLink: "https://madame-kemmie-special.vercel.app/",
+      githubLink: "https://github.com/Gideonthegre8t/madame-kemmie-special",
+      description: "Responsive and functional React app",
+    },
+    {
+      key:2,
       title: "Flower Drink App",
       image: flowerDrink,
       liveLink: "https://flower-drink.vercel.app/",
@@ -17,7 +26,7 @@ function Project() {
       description: "Responsive and functional React app",
     },
     {
-      key:2,
+      key:3,
       title: "Financial Website",
       image: financial,
       liveLink: "https://gideonthegre8t.github.io/portfolio-website-1/",
@@ -25,7 +34,7 @@ function Project() {
       description: "Responsive and functional React website",
     },
     {
-      key:3,
+      key:4,
       title: "Investment Website",
       image: investment,
       liveLink: "https://gideonthegre8t.github.io/portfolio-website-2/",
@@ -33,7 +42,7 @@ function Project() {
       description: "Responsive and functional React website",
     },
     {
-      key:4,
+      key:5,
       title: "Portfolio Website",
       image: portfolio,
       liveLink: "https://gideon-portfolio-theta.vercel.app/",
@@ -41,7 +50,7 @@ function Project() {
       description: "Responsive and functional React website",
     },
     {
-      key:5,
+      key:6,
       title: "Learning Management System",
       image: lms,
       liveLink: "https://baselink-academy.vercel.app/",
