@@ -15,10 +15,18 @@ function Project() {
       image: catering,
       liveLink: "https://madame-kemmie-special.vercel.app/",
       githubLink: "https://github.com/Gideonthegre8t/madame-kemmie-special",
-      description: "Responsive and functional React app",
+      description: "Responsive and Functional Catering App",
     },
     {
       key:2,
+      title: "Learning Management System",
+      image: lms,
+      liveLink: "https://baselink-academy.vercel.app/",
+      githubLink: "https://github.com/Gideonthegre8t/baselink-academy",
+      description: "Responsive and functional Learning Management System",
+    },
+    {
+      key:3,
       title: "Flower Drink App",
       image: flowerDrink,
       liveLink: "https://flower-drink.vercel.app/",
@@ -26,7 +34,7 @@ function Project() {
       description: "Responsive and functional React app",
     },
     {
-      key:3,
+      key:4,
       title: "Financial Website",
       image: financial,
       liveLink: "https://gideonthegre8t.github.io/portfolio-website-1/",
@@ -34,7 +42,7 @@ function Project() {
       description: "Responsive and functional React website",
     },
     {
-      key:4,
+      key:5,
       title: "Investment Website",
       image: investment,
       liveLink: "https://gideonthegre8t.github.io/portfolio-website-2/",
@@ -42,21 +50,14 @@ function Project() {
       description: "Responsive and functional React website",
     },
     {
-      key:5,
+      key:6,
       title: "Portfolio Website",
       image: portfolio,
       liveLink: "https://gideon-portfolio-theta.vercel.app/",
       githubLink: "https://github.com/Gideonthegre8t/gideon-portfolio",
       description: "Responsive and functional React website",
     },
-    {
-      key:6,
-      title: "Learning Management System",
-      image: lms,
-      liveLink: "https://baselink-academy.vercel.app/",
-      githubLink: "https://github.com/Gideonthegre8t/baselink-academy",
-      description: "Responsive and functional Learning Management System",
-    },
+
   ];
 
   return (

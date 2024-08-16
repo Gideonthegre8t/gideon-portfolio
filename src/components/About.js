@@ -11,7 +11,7 @@ function About() {
         <div className="about-card">
           <div className="about-text">
             <p>
-              A mobile-first oriented frontend developer with a knack for
+              A frontend developer with a knack for
               infusing websites with captivating animations.
             </p>
             <p>
