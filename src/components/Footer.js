@@ -8,7 +8,7 @@ function Footer() {
   // Handle Onclick
   const handleLinkdin = () => {
     window.open(
-      "https://www.linkedin.com/in/gideon-johnson-b09ba1219?",
+      "https://www.linkedin.com/in/gideon-johnson-b09ba1219",
       "_blank"
     );
   };
