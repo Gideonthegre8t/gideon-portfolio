@@ -11,7 +11,7 @@ function Technology() {
       let scrollY;
       if (window.innerWidth < 600) {
         // Adjust scroll offset for smaller screens
-        scrollY = window.scrollY / 50; // Adjust the division value to control the intensity of the parallax effect on smaller screens
+        scrollY = window.scrollY / 80; // Adjust the division value to control the intensity of the parallax effect on smaller screens
       } else {
         scrollY = window.scrollY / 30; // Adjust the division value to control the intensity of the parallax effect on larger screens
       }
