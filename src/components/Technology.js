@@ -5,6 +5,7 @@ function Technology() {
   const cssRef = useRef(null);
   const javaRef = useRef(null);
   const reactRef = useRef(null);
+  const nextRef  = useRef(null);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,11 +21,13 @@ function Technology() {
       const cssOffset = scrollY;
       const javaOffset = scrollY;
       const reactOffset = scrollY;
+      const nextOffset  = scrollY;
 
       htmlRef.current.style.transform = `translateY(${htmlOffset}px)`;
       cssRef.current.style.transform = `translateY(${cssOffset}px)`;
       javaRef.current.style.transform = `translateY(${javaOffset}px)`;
       reactRef.current.style.transform = `translateY(${reactOffset}px)`;
+      nextRef.current.style.transform = `translateY(${nextOffset}px)`;
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -89,7 +92,21 @@ function Technology() {
 
         <div className="tech-card" ref={reactRef}>
           <div className="skill-level">
-            <h4>React</h4>
+            <h4>React.js</h4>
+            <h4 className="tiny">Intermediate</h4>
+          </div>
+
+          <div className="meter">
+            <div className="react-outside outside">
+              {" "}
+              <div className="react-inside inside"></div>
+            </div>
+          </div>
+        </div>
+
+        <div className="tech-card" ref={nextRef}>
+          <div className="skill-level">
+            <h4>Next.js</h4>
             <h4 className="tiny">Intermediate</h4>
           </div>
 

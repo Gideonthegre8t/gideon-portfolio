@@ -16,7 +16,7 @@ function Skill() {
           </div>
           <div className="skill-list">
             <div className="skill-dot"></div>
-            <h3>Teamwork</h3>
+            <h3>Tailwind CSS</h3>
           </div>
           <div className="skill-list">
             <div className="skill-dot"></div>
@@ -24,7 +24,7 @@ function Skill() {
           </div>
           <div className="skill-list">
             <div className="skill-dot"></div>
-            <h3>Quick learning</h3>
+            <h3>SEO Management</h3>
           </div>
         </div>
       </div>
