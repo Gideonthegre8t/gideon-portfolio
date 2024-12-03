@@ -8,7 +8,7 @@ function Header() {
 
   const handleDownloadCV = () => {
     window.open(
-      "https://drive.google.com/drive/folders/1b973Cdza-S8Hyf9d_70RkTVOkc-eTZO6?usp=sharing,",
+      "https://drive.google.com/file/d/1hUh10S2Z-fDsH6n5SFPkqy95RJj02bJz/view?usp=sharing,",
       "_blank"
     );
   };
