@@ -61,7 +61,7 @@ function Contact() {
 
       {/* Glowing Moon */}
       <motion.div
-        className="moon"
+        className="glowing-moon"
         style={{
           position: "absolute",
           top: "1%",
