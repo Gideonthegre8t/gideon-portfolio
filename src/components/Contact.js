@@ -64,7 +64,7 @@ function Contact() {
         className="moon"
         style={{
           position: "absolute",
-          top: "10%",
+          top: "1%",
           left: "5%",
           width: "150px",
           height: "150px",

@@ -532,9 +532,6 @@ margin-top: 2em;
 
   .contact-bottom{
     display: flex;
-    flex-direction: row;
-
-    
     height: auto;
     text-align: left;
   }
@@ -606,18 +603,9 @@ height: 38px;
     margin-left: 1.5em;
   }
 
-
-
-
-
   .contact-bottom{
     gap: 2em;
-
-
   }
-
-  
- 
 }
 
 @media only screen and (max-width: 600px) {
@@ -962,7 +950,7 @@ height: 38px;
 
   .contact-bottom{
     gap: 2em;
-flex-direction: column-reverse;
+flex-direction: column;
   }
 
   .contact-top > h2{
