@@ -1,124 +1,85 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef, useState } from "react";
+import { motion, useInView } from "framer-motion";
 
 function Technology() {
-  const htmlRef = useRef(null);
-  const cssRef = useRef(null);
-  const javaRef = useRef(null);
-  const reactRef = useRef(null);
-  const nextRef  = useRef(null);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { once: true, margin: "-50% 0px" }); // Trigger only once
+  const [hasAnimated, setHasAnimated] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      let scrollY;
-      if (window.innerWidth < 600) {
-        // Adjust scroll offset for smaller screens
-        scrollY = window.scrollY / 80; // Adjust the division value to control the intensity of the parallax effect on smaller screens
-      } else {
-        scrollY = window.scrollY / 30; // Adjust the division value to control the intensity of the parallax effect on larger screens
-      }
+  const containerVariants = {
+    hidden: { opacity: 0, y: 50 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        staggerChildren: 0.2,
+      },
+    },
+  };
 
-      const htmlOffset = scrollY 
-      const cssOffset = scrollY;
-      const javaOffset = scrollY;
-      const reactOffset = scrollY;
-      const nextOffset  = scrollY;
+  const cardVariants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0 },
+  };
 
-      htmlRef.current.style.transform = `translateY(${htmlOffset}px)`;
-      cssRef.current.style.transform = `translateY(${cssOffset}px)`;
-      javaRef.current.style.transform = `translateY(${javaOffset}px)`;
-      reactRef.current.style.transform = `translateY(${reactOffset}px)`;
-      nextRef.current.style.transform = `translateY(${nextOffset}px)`;
-    };
+  const progressVariants = {
+    hidden: { scaleX: 0 },
+    visible: { scaleX: 1, transition: { duration: 1 } },
+  };
 
-    window.addEventListener("scroll", handleScroll);
-
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, []);
+  if (isInView && !hasAnimated) {
+    setHasAnimated(true); // Set state to ensure animation only triggers on first scroll down
+  }
 
   return (
-    <section>
-      <div
+    <section ref={ref}>
+      <motion.div
         id="technology"
         className="tech-container"
+        initial="hidden"
+        animate={hasAnimated ? "visible" : "hidden"} // Animate only if it's the first view
+        variants={containerVariants}
       >
         <div>
-          <h2 className="tech-header">Technologies</h2>
+          <motion.h2
+            className="tech-header"
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+          >
+            Technologies
+          </motion.h2>
         </div>
 
-        <div className="stack">
-        <div className="tech-card" ref={htmlRef}>
-          <div className="skill-level">
-            <h4>Html</h4>
-            <h4 className="tiny">Expert</h4>
-          </div>
-
-          <div className="meter">
-            <div className="html-outside outside">
-              {" "}
-              <div className="html-inside inside"></div>
-            </div>
-          </div>
-        </div>
-
-        <div className="tech-card" ref={cssRef}>
-          <div className="skill-level">
-            <h4>CSS</h4>
-            <h4 className="tiny">Expert</h4>
-          </div>
-
-          <div className="meter">
-            <div className="css-outside outside">
-              {" "}
-              <div className="css-inside inside"></div>
-            </div>
-          </div>
-        </div>
-
-        <div className="tech-card" ref={javaRef}>
-          <div className="skill-level">
-            <h4>JavaScript</h4>
-            <h4 className="tiny">Advanced</h4>
-          </div>
-
-          <div className="meter">
-            <div className="java-outside outside">
-              {" "}
-              <div className="java-inside inside"></div>
-            </div>
-          </div>
-        </div>
-
-        <div className="tech-card" ref={reactRef}>
-          <div className="skill-level">
-            <h4>React.js</h4>
-            <h4 className="tiny">Intermediate</h4>
-          </div>
-
-          <div className="meter">
-            <div className="react-outside outside">
-              {" "}
-              <div className="react-inside inside"></div>
-            </div>
-          </div>
-        </div>
-
-        <div className="tech-card" ref={nextRef}>
-          <div className="skill-level">
-            <h4>Next.js</h4>
-            <h4 className="tiny">Intermediate</h4>
-          </div>
-
-          <div className="meter">
-            <div className="react-outside outside">
-              {" "}
-              <div className="react-inside inside"></div>
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
+        <motion.div className="stack" variants={containerVariants}>
+          {[
+            { name: "Html", level: "Expert", class: "html" },
+            { name: "CSS", level: "Expert", class: "css" },
+            { name: "JavaScript", level: "Advanced", class: "java" },
+            { name: "React.js", level: "Intermediate", class: "react" },
+            { name: "Next.js", level: "Intermediate", class: "react" },
+          ].map((tech, index) => (
+            <motion.div
+              className="tech-card"
+              key={index}
+              variants={cardVariants}
+            >
+              <div className="skill-level">
+                <h4>{tech.name}</h4>
+                <h4 className="tiny">{tech.level}</h4>
+              </div>
+              <div className="meter">
+                <div className={`${tech.class}-outside outside`}>
+                  <motion.div
+                    className={`${tech.class}-inside inside`}
+                    variants={progressVariants}
+                  ></motion.div>
+                </div>
+              </div>
+            </motion.div>
+          ))}
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

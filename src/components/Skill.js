@@ -1,31 +1,40 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 function Skill() {
+  const bounceVariants = {
+    initial: { y: 0 },
+    animate: {
+      y: [0, -10, 0],
+      transition: {
+        duration: 0.9,
+        repeat: Infinity,
+        repeatType: "loop",
+      },
+    },
+  };
+
   return (
     <section>
       <div className="skill-container">
         <div className="skill-header">
-          <h2>Additional tecnhnologies and skills</h2>
+          <h2>Additional technologies and skills</h2>
         </div>
 
         <div className="skills">
-          {" "}
-          <div className="skill-list">
-            <div className="skill-dot"></div>
-            <h3>Git</h3>
-          </div>
-          <div className="skill-list">
-            <div className="skill-dot"></div>
-            <h3>Tailwind CSS</h3>
-          </div>
-          <div className="skill-list">
-            <div className="skill-dot"></div>
-            <h3>UI/3D animation</h3>
-          </div>
-          <div className="skill-list">
-            <div className="skill-dot"></div>
-            <h3>SEO Management</h3>
-          </div>
+          {["Git", "Tailwind CSS", "UI/3D animation", "SEO Management"].map(
+            (skill, index) => (
+              <div className="skill-list" key={index}>
+                <motion.div
+                  className="skill-dot"
+                  variants={bounceVariants}
+                  initial="initial"
+                  animate="animate"
+                ></motion.div>
+                <h3>{skill}</h3>
+              </div>
+            )
+          )}
         </div>
       </div>
     </section>

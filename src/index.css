@@ -13,6 +13,16 @@ body {
   font-family: 'poppins';
 }
 
+.init-logo {
+  color: #fff;
+  font-size: 24px;
+}
+
+button{
+  cursor: pointer;
+}
+
+
 .back-to-top {
   position: fixed;
   background: none;
@@ -79,6 +89,27 @@ nav a:hover {
 
 span {
   color:  #13adc7  ;
+}
+
+.text-gradient {
+  background: linear-gradient(
+    270deg,
+    #13adc7 0%,
+    #6978d1 66.67%,
+    #945dd6 100%
+  );
+  background-clip: text; /* Standard property */
+  -webkit-background-clip: text; /* WebKit-specific for compatibility */
+  -webkit-text-fill-color: transparent; /* Required for WebKit browsers */
+}
+
+.quote {
+  display: flex;
+  justify-content: center; 
+  align-items: center;    
+  text-align: center;
+  height: 100%;           
+  width: 100%;       
 }
 
 .stamp {
@@ -246,7 +277,7 @@ span {
 
   .card-container {
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr;
+    grid-template-columns: 1fr 1fr 1fr;
     margin-top: 2em;
   }
 
@@ -261,6 +292,7 @@ span {
     padding-bottom: 25px;
     border-color: #6978d1;
     gap: 5em;
+    width: 90%;
   }
 
   .project-top,
@@ -274,6 +306,7 @@ span {
     font-size: 26px;
     font-weight: 500;
     line-height: 12px;
+    width: 100%;
   }
 
   p {
@@ -332,15 +365,18 @@ span {
     transition: transform 0.3s;
   }
 
-  .tech-container,
   .skill-container,
-  .about-container,
   .footer-container {
     margin-top: 6em;
   }
 
+  .about-container{
+margin-top: 2em;
+  }
+
+
   .skill-container{
-    margin-top: 12em;
+    margin-top: 6em;
   }
 
   .skill-level {
@@ -400,6 +436,7 @@ span {
 
   .skill-dot {
     margin: 0.8em;
+    margin-top: 5px;
     width: 24px;
     height: 24px;
     gap: 0px;
@@ -423,6 +460,7 @@ span {
 
   .about-text > p {
     margin-top: 2em;
+ 
   }
 
   .footer-container,
@@ -434,6 +472,7 @@ span {
     width: 100%;
     height: 100%;
     background-color: #fff;
+    
   }
 
   .footer-header {
@@ -443,6 +482,7 @@ span {
   .logo {
     display: flex;
     gap: 2em;
+    cursor: pointer;
   }
 
   .logo-phone {
@@ -462,7 +502,7 @@ span {
   }
 
   .contact-wrapper{
-    margin-top: 10%;
+  margin-top: 12em;
     padding-bottom: 3em;
   }
 
@@ -479,15 +519,22 @@ span {
     font-size: 22px;
   }
 
+  .contact-bottom-wrapper {
+    background: #0A0D17;
+    margin: 0 auto;
+    margin-top: 3em;
+    padding: 40px;
+    border-radius: 24px;
+    width: 80%; 
+    max-width: 1200px; 
+  }
+  
+
   .contact-bottom{
     display: flex;
     flex-direction: row;
-    margin-top: 2em;
-    background:#0A0D17;
-    border-radius: 24px;
-    padding: 2em;
-    padding-bottom: 3em;
-    width: 80%;
+
+    
     height: auto;
     text-align: left;
   }
@@ -556,12 +603,12 @@ height: 38px;
 
   .space-ship{
     height: 10px;
+    margin-left: 1.5em;
   }
 
-  .quote{
-    margin-top: -9em;
-    padding: 2em;
-  }
+
+
+
 
   .contact-bottom{
     gap: 2em;
@@ -745,9 +792,13 @@ height: 38px;
     color: #fff;
   }
 
-  .tech-container,
+ 
   .skill-container {
     margin-top: 4em;
+  }
+
+  .tech-container{
+    margin-top: -13em;
   }
 
   .skill-level {
@@ -799,6 +850,11 @@ height: 38px;
     margin: 4em 15px;
   }
 
+  .contact-bottom-wrapper{
+    width: 100%;
+    padding: 20px;
+  }
+
   .about-text {
     display: block;
   }
@@ -841,6 +897,11 @@ height: 38px;
     box-shadow: 0px 3.02px 12.94px 0px #13adc74d;
   }
 
+  .contact-wrapper{
+    margin-top: 1em;
+      padding-bottom: 3em;
+    }
+
   .about-container {
     margin: 0px 15px;
   }
@@ -851,6 +912,7 @@ height: 38px;
 
   .about-text > p {
     margin-top: 2em;
+    width: 100%;
   }
 
   .about-text > h3 {
@@ -901,16 +963,7 @@ height: 38px;
   .contact-bottom{
     gap: 2em;
 flex-direction: column-reverse;
-
-
   }
-
-  .quote{
-
-margin: 0;
-  }
-
- 
 
   .contact-top > h2{
     font-size: 40px;
@@ -919,8 +972,15 @@ margin: 0;
    .contact-top > p{
     font-size: 15px;
    }
-  
 
+   .moon{
+  display: none;
+   }
+
+   .quote{
+    margin-top: 3em;
+   }
+  
 }
 
 @media only screen and (min-width: 820px) and (max-width: 1240px) {
@@ -1088,13 +1148,6 @@ margin: 0 auto;
     text-align: center;
   }
 
-  .quote{
-    margin: 0 11em;
-    margin-top: -9em;
-    justify-content: center;
-    text-align: center;
-    width: 60%;
-  }
 
 }
 
@@ -1106,7 +1159,7 @@ margin: 0 auto;
 }
 @media only screen and (min-width: 322px) and (max-width: 501px) {
   .init-logo {
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .header-top {
@@ -1123,9 +1176,6 @@ margin: 0 auto;
 }
 
 @media only screen and (max-width: 435px) {
-  .init-logo {
-    font-size: 16px;
-  }
 
   .header-top {
     display: block;
