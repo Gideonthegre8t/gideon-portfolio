@@ -45,7 +45,7 @@ const VerticalWaveSVG = () => {
         ref={pathRef}
         d="M100 0 C200 100, 0 300, 100 600 T100 1200"
         stroke="url(#verticalWaveGradient)"
-        strokeWidth="2"
+        strokeWidth="1"
         strokeLinecap="round"
         strokeLinejoin="round"
         style={{ strokeDasharray: "1000", strokeDashoffset: "1000" }}  
