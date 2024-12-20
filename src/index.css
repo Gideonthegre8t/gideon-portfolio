@@ -1010,6 +1010,11 @@ flex-direction: column;
     width: 75%;
   }
 
+  .tech-container{
+    margin-top: -6em;
+  }
+
+
   
 
   .rive-anim {
@@ -1081,9 +1086,6 @@ flex-direction: column;
     padding: 0;
   }
 
-  .tech-container{
-    margin-top: -6em;
-  }
 
   .footer-container {
     display: block;
