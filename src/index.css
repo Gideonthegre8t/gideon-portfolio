@@ -13,7 +13,10 @@ body {
   font-family: 'poppins';
 }
 
-
+.customSVG{
+  position: fixed;
+  width: 100%;
+}
 
 .customSVG1{
   width: 100%; /* Spans the entire page width */
@@ -804,7 +807,7 @@ height: 38px;
 
 
   .tech-container{
-    margin-top: -13em;
+    margin-top: -20em;
   }
 
   .skill-level {
@@ -1007,6 +1010,8 @@ flex-direction: column;
     width: 75%;
   }
 
+  
+
   .rive-anim {
     position: absolute;
     margin: -1em 0em;
@@ -1074,6 +1079,10 @@ flex-direction: column;
     font-family: 'poppins';
     width: 40%;
     padding: 0;
+  }
+
+  .tech-container{
+    margin-top: -6em;
   }
 
   .footer-container {
