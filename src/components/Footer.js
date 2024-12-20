@@ -4,6 +4,7 @@ import facebook from "../assets/images/facebook.png";
 import instagram from "../assets/images/Instagram.png";
 import Copyright from "./Copyright";
 
+
 function Footer() {
   // Handle Onclick
   const handleLinkdin = () => {
@@ -29,9 +30,10 @@ function Footer() {
 
   return (
     <footer>
+      
       <div className="footer-container">
         <div className="footer-top">
-          <p className="footer-header">Feel free to contact me</p>
+          <p className="footer-header text-gradient">Feel free to contact me</p>
           <div className="logo logo-phone">
             <img
               className="linkdin"

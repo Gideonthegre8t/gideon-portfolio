@@ -13,6 +13,20 @@ body {
   font-family: 'poppins';
 }
 
+
+
+.customSVG1{
+  width: 100%; /* Spans the entire page width */
+  height: auto; /* Maintains aspect ratio */
+  position: fixed; /* Stays in view as you scroll */
+  top: 0;
+  z-index: -1; /* Renders below content */
+  left:10%;
+  
+}
+
+
+
 .init-logo {
   color: #fff;
   font-size: 24px;
@@ -477,9 +491,6 @@ margin-top: 2em;
     
   }
 
-  .footer-header {
-    color: #13adc7;
-  }
 
   .logo {
     display: flex;
@@ -1192,3 +1203,7 @@ margin: 0 auto;
 width: 90%;
   }
 }
+
+
+
+

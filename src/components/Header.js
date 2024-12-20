@@ -4,6 +4,7 @@ import EllipseAnim from "./EllipseAnimation";
 import BackToTopText from "./BackToTopText";
 import { motion } from "framer-motion";
 
+
 function Header() {
   //Handle CV download
 

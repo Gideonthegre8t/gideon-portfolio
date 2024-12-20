@@ -7,6 +7,8 @@ import Skill from "./components/Skill";
 import About from "./components/About";
 import Footer from "./components/Footer";
 import Contact from "./components/Contact";
+import CustomSVG1 from "../src/components/CustomSVG1";
+
 
 function App() {
   return (
@@ -42,6 +44,7 @@ function App() {
         />
       </Helmet>
 
+<CustomSVG1 />
       <Header />
       <Project />
       <Technology />
