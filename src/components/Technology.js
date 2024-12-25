@@ -55,9 +55,10 @@ function Technology() {
           {[
             { name: "Html", level: "Expert", class: "html" },
             { name: "CSS", level: "Expert", class: "css" },
-            { name: "JavaScript", level: "Advanced", class: "java" },
-            { name: "React.js", level: "Intermediate", class: "react" },
-            { name: "Next.js", level: "Intermediate", class: "react" },
+            { name: "JavaScript", level: "Professional", class: "java" },
+            { name: "React.js", level: "Professional", class: "react" },
+            { name: "Next.js", level: "Professional", class: "react" },
+            
           ].map((tech, index) => (
             <motion.div
               className="tech-card"
