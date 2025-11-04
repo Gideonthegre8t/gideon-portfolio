@@ -57,7 +57,9 @@ function Technology() {
             { name: "CSS", level: "Expert", class: "css" },
             { name: "JavaScript", level: "Professional", class: "java" },
             { name: "React.js", level: "Professional", class: "react" },
+            { name: "Tailwind CSS", level: "Expert", class: "css" },
             { name: "Next.js", level: "Professional", class: "react" },
+          
             
           ].map((tech, index) => (
             <motion.div

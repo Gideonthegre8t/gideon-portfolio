@@ -19,11 +19,11 @@ function Project() {
 
     {
       key: 1,
-      title: "Coin Trading Platform",
+      title: "Coinkove",
       image: coinkove,
-      liveLink: "https://gideon-portfolio-theta.vercel.app/",
+      liveLink: "https://coinkove.com/",
       githubLink: "https://gideon-portfolio-theta.vercel.app/",
-      description: "Still in production",
+      description: "Peer-to-peer cryptocurrency marketplace.",
     },
 
     {

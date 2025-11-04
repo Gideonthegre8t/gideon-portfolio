@@ -10,7 +10,7 @@ function Header() {
 
   const handleDownloadCV = () => {
     window.open(
-      "https://drive.google.com/file/d/1hUh10S2Z-fDsH6n5SFPkqy95RJj02bJz/view?usp=sharing,",
+      "https://drive.google.com/file/d/1hyVEwQaTT-gEKaE-3Ebe0Gi8JsPPS98b/view?usp=sharing,",
       "_blank"
     );
   };

@@ -22,7 +22,7 @@ function Skill() {
         </div>
 
         <div className="skills">
-          {["Git", "Tailwind CSS", "UI/3D animation", "SEO Management"].map(
+          {["Git", "Tailwind CSS", "UI Animation", "SEO Management"].map(
             (skill, index) => (
               <div className="skill-list" key={index}>
                 <motion.div
