@@ -43,7 +43,7 @@ function About() {
               }}
               transition={{ duration: 1, delay: 0.2 }}
             >
-              A frontend developer with a knack for infusing websites with captivating animations.
+              A Sofware Engineering with a knack for infusing websites with captivating animations.
             </motion.p>
             <motion.p
               initial={{ opacity: 0, x: -50 }}

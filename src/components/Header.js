@@ -65,7 +65,7 @@ function Header() {
               {" "}
               I'm Gideon,
             </motion.span>{" "}
-            Frontend developer
+            Software Engineer
           </motion.h2>
           <motion.p
             initial={{ opacity: 0, y: 30 }}
