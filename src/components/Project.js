@@ -8,8 +8,9 @@ import portfolio from "../assets/images/Portfolio.png";
 import flowerDrink from "../assets/images/flower-drink.png";
 import lms from "../assets/images/learning-management.png";
 import catering from "../assets/images/catering.png";
-import invigilator from "../assets/images/the-invigilator.png"
-import coinkove from "../assets/images/coin-trading-platform.png"
+import invigilator from "../assets/images/the-invigilator.png";
+import coinkove from "../assets/images/coin-trading-platform.png";
+import alumniHub from "../assets/images/alumni-hub.png";
 
 
 gsap.registerPlugin(ScrollTrigger);
@@ -17,8 +18,17 @@ gsap.registerPlugin(ScrollTrigger);
 function Project() {
   const projects = [
 
-    {
+      {
       key: 1,
+      title: "Alumni Hub",
+      image: alumniHub,
+      liveLink: "https://alumni-hub-kbk9.vercel.app/",
+      githubLink: " Gideonthegre8t/alumni-hub/",
+      description: "A private, secure space for an alumni to connect",
+    },
+
+    {
+      key: 2,
       title: "Coinkove",
       image: coinkove,
       liveLink: "https://coinkove.com/",
@@ -27,7 +37,7 @@ function Project() {
     },
 
     {
-      key: 2,
+      key: 3,
       title: "The Invigilator",
       image: invigilator,
       liveLink: "https://object-detection-app-psi.vercel.app/",
@@ -36,7 +46,7 @@ function Project() {
     },
 
     {
-      key: 3,
+      key: 4,
       title: "Catering Website",
       image: catering,
       liveLink: "https://madame-kemmie-special.vercel.app/",
@@ -44,7 +54,7 @@ function Project() {
       description: "Responsive and Functional Catering App",
     },
     {
-      key: 4,
+      key: 5,
       title: "Learning Management",
       image: lms,
       liveLink: "https://baselink-academy.vercel.app/",
@@ -52,7 +62,7 @@ function Project() {
       description: "Responsive and functional Learning Management System",
     },
     {
-      key: 5,
+      key: 6,
       title: "Flower Drink App",
       image: flowerDrink,
       liveLink: "https://flower-drink.vercel.app/",
@@ -60,7 +70,7 @@ function Project() {
       description: "Responsive and functional React app",
     },
     {
-      key: 6,
+      key: 7,
       title: "Financial Website",
       image: financial,
       liveLink: "https://gideonthegre8t.github.io/portfolio-website-1/",
@@ -68,7 +78,7 @@ function Project() {
       description: "Responsive and functional React website",
     },
     {
-      key: 7,
+      key: 8,
       title: "Investment Website",
       image: investment,
       liveLink: "https://gideonthegre8t.github.io/portfolio-website-2/",
@@ -76,7 +86,7 @@ function Project() {
       description: "Responsive and functional React website",
     },
     {
-      key: 8,
+      key: 9,
       title: "Portfolio Website",
       image: portfolio,
       liveLink: "https://gideon-portfolio-theta.vercel.app/",
